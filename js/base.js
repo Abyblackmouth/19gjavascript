@@ -1,29 +1,34 @@
+console.log("Base file")
 
-console.log("Hola Koders")
-let Koders = "Abraham"
+//OPERADORES DE ASIGNACION
 
-console.log( "Hola ", Koders)
+/*
 
-//Formularios (prompt//
+let total = 0
+let a = 4
+let b = 5
+let c = 0
 
-let nombreKoder = window.prompt("Dame tu nombre")
-console.log(nombreKoder)
 
-if(nombreKoder === null){
-    console.log("Nombre vacio")
-} else{
-    console.log(nombreKoder)
-}
+suma = a + b
+console.log(suma)
 
-//pedir al usuario los grados celsius en su localidad
-// C to F
-// celsius * 9/5 + 32
-// calcular los F
 
-let gradosUser = prompt("Grados de tu localidad")
-if(gradosUser === null){
-    console.log("No ingresaste información")
-} else{
-    console.log(parseInt(gradosUser))
-}
-console.log((gradosUser * 1.8) + 32)
+suma = suma + 5
+suma += 5
+console.log(suma)
+
+
+total = total - 3
+total -= 3
+
+total = total *2
+total *= 2
+
+total = total / 3
+total = /= 3
+
+total = total % 3
+total %= 3
+*/
+
