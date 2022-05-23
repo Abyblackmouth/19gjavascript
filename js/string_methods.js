@@ -12,5 +12,34 @@ str.nombreMetodo(p1,p2,pN)
 "0123456789"
 
 
-// TAREA::: ESTUDIAR TODOS LOS METODOS STRING Y TOMAR UNO PARA EXPLICAR
+// EJERCICIO METODOS STRING//
+
+/**
+ * 'Hola Koders'
+ * Cuantas vocales existen
+*/
+
+let text = "Hola Koders"
+resultado = text.match(/[aeiouAEIOU]/g).length
+console.log(resultado)
+
+
+/**
+ * 'Hola Koders'
+ * Cuantos caracteres son
+*/
+
+
+
+/**
+ * 'Hola Koders'
+ * Cortar el string en 2 strings 
+ * -> "hola" "koders"
+*/
+
+
+
+
+
+
 
