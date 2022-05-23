@@ -26,7 +26,7 @@ if (num <= 10) {
     Vocales -> oauo
  */
 
-let str = prompt("introduice una oración")
+let str = prompt("introduce una oración")
 let vocales = ""
 
 let strMin = str.toLowerCase()
