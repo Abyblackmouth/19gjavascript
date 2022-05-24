@@ -1,91 +1,72 @@
-/*
-EJERCICIO 2
-    Pedir al usuario usuario un numero entre 1 y 10
-    Imprimir la tabla de multiplicar de ese número
-*/
+// Ejercicios
 
-let num = parseInt(prompt("Ingresa un numero del 1 al 10"))
-if (num <= 10) {
-
-    for (let i = 1; i <= 10; i++) {
-        console.log(`${num} x ${i} = ${i * num}`)
-    }
-
-} else {
-    window.alert("Numero invalido")
-}
-
-
-/*
- EJERCICIO 3
-    Pedir al usuario una oracion
-    Imprimir un string con todas las vocales
-    Imprimir un string con todas las consonantes
-    p.ej. "Hola mundo"
-    Consonantes -> hlmnd
-    Vocales -> oauo
+/**
+ * Ejercicio 1
+ * Escribir un programa de arroje la suma de los multiplos de 3, 5 o 7 que hay entre 1 y 100
+ * Resolver con For, While y do While
  */
 
-let str = prompt("introduce una oración")
-let vocales = ""
+let num = parseInt(prompt("Ingresa un numero del 1 al 100"))
+let k1 = 3
+let k2 = 5
+let k3 = 7
+let container
+let result = ""
 
-let strMin = str.toLowerCase()
-for( let i = 0; i < strMin.length; i ++){
-    if(strMin [i]=="a" || strMin[i]=="e" || strMin [i]=="i" || strMin[i] == "o" || strMin[i]=="u"){
-        vocales = vocales + strMin[i]
+
+
+if (num >= 1 && num <= 100){
+       while ( k1 <= num){
+
+        result += [k1,""]
+        k1 += 3
+        
+        }
     }
-}
-console.log(vocales)
-
-let consonantes = str.replace(/[aeiou" "]/gi,"");
-console.log(consonantes)
-
-
-
-/*
-EJERCICIO 4vowels
-    Pedir al usuario un numero entre 10 y 100
-    Imprimir todos los numeros pares que existenm entre 1 y ese numero
-    p.ej. 12 -> 2,4,6,8,10,12
-    */
-
-let numUser = parseInt(prompt("Ingrese numero entre 10 y 100"))
-let n = 2
-let numConcanete =""
-
-if (numUser >=10 && numUser <= 100){
-    while (n <=numUser){
-
-        numConcanete += [n,""]
-        n +=2
-    }
-    console.log(numConcanete)
-}else{
-    console.log("Numero fuera de rango")
-
-}
-
-/*
-EJERCICIO 5
-    Pedir el usuario una palabra
-    Invertir esa palabra e imprimirla en consola
-    p.ej. 'Hola' -> 'aloh'
-    */
-
-let imputWord = prompt("Indica la palabra que será invertida")
-let reversedWord = ""
-
-if(imputWord.length > 0){
-    console.log(`Palabra ingresada ${imputWord}`);
-
-    for (let i = imputWord.length -1; i >= 0; i--){
-        reversedWord += imputWord[i].toLowerCase();
-    }
-    console.log(`${imputWord} -> ${reversedWord}`);
-}
+    console.log(result)
+    
 
 
 
 
 
 
+
+/**
+ * Ejercicio 2
+ * Pedir el usuario 1 numero entre 1 y 100
+ * sumar todos los numeros entre el 1 y este numero
+ * Mandar un alert con el  total
+ * Resolver con For, While y do While
+ * p.ej. 5
+ * ->  15
+ */
+
+
+/**
+ * Ejercicio 3
+ * pedir una oracion al usuario
+ * Contar las letras "a" y "e" y espacios,
+ * Resolver con For, While y do While
+ * 
+ * p.ej. 'hola kodErs'
+ * ->  A -> 1 
+ * ->  E -> 1
+ * ->  Espacios -> 1 
+ */
+
+
+/**
+ * Ejercicio 4
+ * Estudiar acerca del tema Funciones
+ * ¿Qué son?
+ * Parametros y argumentos de una funcion
+ * Parametros de una funcion
+ * Parametros opcionales
+ * Parametros por defecto (default)
+ * 
+ * Referencias
+ * https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions
+ * https://www.programiz.com/javascript/function
+ * 
+ */
