@@ -6,29 +6,29 @@
  * Resolver con For, While y do While
  */
 
-let num = parseInt(prompt("Ingresa un numero del 1 al 100"))
-let k1 = 3
-let k2 = 5
-let k3 = 7
-let container
-let result = ""
+function sumaMultiplos() {
+    let num1 = 3
+    let num2 = 5
+    let num3 = 7
+    let sumaN1 = 0
+    let sumaN2 = 0
+    let sumaN3 = 0
+    let sumaTotal = 0
 
-
-
-if (num >= 1 && num <= 100){
-       while ( k1 <= num){
-
-        result += [k1,""]
-        k1 += 3
-        
+    for (let i = 1; i <= 100; i++) {
+        if (i % num1 === 0) {
+            sumaN1 += i
+        }
+        if (i % num2 === 0) {
+            sumaN2 += i
+        }
+        if (i % num3 === 0) {
+            sumaN3 += i
         }
     }
-    console.log(result)
-    
-
-
-
-
+    sumaTotal = sumaN1 + sumaN2 + sumaN3
+    console.log(sumaTotal)
+}
 
 
 
@@ -43,6 +43,23 @@ if (num >= 1 && num <= 100){
  */
 
 
+
+function sumaNumeros() {
+
+    let num = parseInt(prompt("ingresa un numero"))
+    let suma = 0
+
+    if (num < 1 && num > 100) {
+        for (let i = 1; i <= num; i++) {
+            suma += i
+        }
+    }
+
+    window.alert(suma)
+
+}
+
+
 /**
  * Ejercicio 3
  * pedir una oracion al usuario
@@ -54,6 +71,34 @@ if (num >= 1 && num <= 100){
  * ->  E -> 1
  * ->  Espacios -> 1 
  */
+
+function ConteoCaracteres() {
+    let strMin = prompt("Ingresa una frase").toLowerCase()
+    let contadorA = 0
+    let contadorE = 0
+    let contadorEspacios = 0
+
+    for (let i = 0; i < strMin; i++) {
+        if (strMin[i] === "a") {
+            contadorA++
+        }
+        if (strMin[i] === "e") {
+            contadorE++
+        }
+        if (strMin[i] === " ") {
+            contadorEspacios++
+        }
+
+    }
+    console.log()
+
+}
+
+
+
+
+
+
 
 
 /**
