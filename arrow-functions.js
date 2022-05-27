@@ -42,7 +42,7 @@ console.log( strReversed("Hola"))
 * Arrojar un alert con el resultado
 * -> convertTemp(25) -> La temperatura es de 77 ºF
 * -> convertTemp() -> 'Faltan datos'
-*/
+
 
 function ConverterGrados (){
    let gradosUser = prompt("Grados de tu localidad")
@@ -63,7 +63,7 @@ console.log(grados)
 
 /**
  * Funcion que imprima las tablas del 1 al 10
- */
+ 
 
  const tablas = () => {
     for(i =0; i <= 10; i++){
@@ -73,6 +73,8 @@ console.log(grados)
     }
 
 }
+
+/*
 
 
 // Arrow fuunction
@@ -104,3 +106,38 @@ const isPalindrome = () => {
     }
 
 }
+
+//let arrMultiple = [1,2,4, 'México', 'Perú', 'España', 3]
+/**
+ * Escribir una funcion que
+ * Filtrar solo las ciudades
+ * filterCities( [1,2,4, 'México', 'Perú', 'España', 3] )
+ * -> ['México', 'Perú', 'España']
+ *  .filter()
+ *  .forEach()
+ */
+
+
+let arrMultiple = [1,2,4, "México", "Perú", "España", 3]
+/*
+let soloPaises = arrMultiple.filter((currentValue, index, soloPaises) => {
+    if(typeof currentValue === "string"){
+        return currentValue
+    }
+})
+console.log(soloPaises)
+
+
+*/
+let result = []
+arrMultiple.forEach((value) => {
+    if(typeof value === "string"){
+        result.push(value)
+    }
+
+})
+
+console.log(result)
+
+
+

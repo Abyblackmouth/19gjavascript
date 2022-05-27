@@ -43,3 +43,8 @@
  */
 
 
+const obtenerPares = (arrayDeNumeros) => {
+    arrayDeNumeros.array.forEach(numero => {
+        
+    });
+}
