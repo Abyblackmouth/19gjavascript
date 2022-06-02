@@ -9,6 +9,9 @@
  * -> Son 3 empleados y el total es 100000
  */
 
+
+/*
+
  let salarios = {
     'juan': 30000,
     'Albert': 50000,
@@ -29,6 +32,8 @@ const employesAndTotal = ( obj ) => {
 
 }
 
+*/
+
 
 /**
  * Ejercicio 2.
@@ -42,8 +47,11 @@ const employesAndTotal = ( obj ) => {
  * 6. Clonar el objeto en uno nuevo
  * 7. Imprimir en consola el nuevo objeto
  * 
- * @hint https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
  */
+
+
+/*
 
 let koder = {
     languages: ["JavaScript", "Python", "Ruby"],
@@ -51,6 +59,8 @@ let koder = {
     level: 3,
     avatar: "https://picsum.photos/200/300"
 }
+
+*/
 
 
 /**
@@ -60,3 +70,43 @@ let koder = {
  * https://www.programiz.com/javascript/library/object/assign
  * 
  */
+
+
+/*
+El método Object.freeze() congela un objeto, 
+es decir: impide que se le agreguen nuevas propiedades; 
+--impide que se puedan eliminar las propiedades ya existentes; 
+--impide que dichas propiedades, o su capacidad de enumeración, 
+configuración, o escritura, puedan ser modificadas; 
+--impide también que se pueda modificar su prototipo. 
+----> El método devuelve el objeto recibido.
+
+SINTAXIS:
+
+Object.freeze(obj)
+obj    ------> El objeto a congelar.
+
+
+*/
+
+
+
+  const koder = {
+    name: "Abraham Covarrubias",
+    edad: 33,
+    Origin: "Monterrey, Nuevo Léon",
+    generation: 19,
+    bootcamp: "JavaScript",
+    horario: ["7pm a 9pm"],
+    isActive: true
+}
+
+Object.freeze(koder)
+
+koder.edad = 18
+koder.name = "Hector Covarrubias"
+
+console.log(koder.edad)
+console.log(koder.name)
+  
+  

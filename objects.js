@@ -132,3 +132,5 @@ console.log(totalSalario(salarios))
 
 
 
+
+
