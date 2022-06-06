@@ -33,24 +33,24 @@
 let tbody = document.querySelector("tbody") //seleccionar la etiqueta tabla
 koders.forEach((koder, index, arr) =>{  // se crea un forEach para identar el contenido del objeto
     
-   // console.log(koder.name) //solo para vislizacion
-   // console.log(koder.age) // solo se agrega para vislizacion
-   //  console.log(koder.generation) // solo se agrega para visualizacion
+    console.log(koder.name) //solo para vislizacion
+    console.log(koder.age) // solo se agrega para vislizacion
+    console.log(koder.generation) // solo se agrega para visualizacion
 
-    let tr = document.createElement("tr")
+    let tr = document.createElement("tr")  // crear elemento    
 
-    let tdName = document.createElement("td")
-    tdName.textContent = koder.name
+    let tdName = document.createElement("td") // crear elemento
+    tdName.textContent = koder.name //manda llamar parametro del objeto
     tr.appendChild(tdName)
 
 
-    let tdAge = document.createElement("td")
-    tdAge.textContent = koder.age
+    let tdAge = document.createElement("td") // crear elemento
+    tdAge.textContent = koder.age //manda llamar parametro del objeto
     tr.appendChild(tdAge)
 
 
-    let tdGen = document.createElement("td")
-    tdGen.textContent = koder.generation
+    let tdGen = document.createElement("td") // crear elemento
+    tdGen.textContent = koder.generation //manda llamar parametro del objeto
     tr.appendChild(tdGen)
 
     console.log(tr)
