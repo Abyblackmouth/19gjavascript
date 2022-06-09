@@ -5,3 +5,8 @@
     font-size: 25px;
     margin-top: 1rem;
 }
+
+input{
+    border-radius: 10px;
+    border-color: rgb(41, 104, 240);  
+}
